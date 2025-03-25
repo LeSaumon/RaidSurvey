@@ -1,0 +1,11 @@
+## Interface : 11.1.0.59679
+## Title : RaidSurvey
+## SavedVariables : RaidSurveyDB
+## Author : Saumon
+## Notes : Used to send survey to your raid roster.
+## Version : 1.0
+
+Utils.lua
+Communication.lua
+UI.lua
+RaidSurvey.lua
