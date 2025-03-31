@@ -4,7 +4,7 @@
 ## Author : Saumon
 ## Notes : Used to send survey to your raid roster.
 ## Version : 1.0
-
+## RequiredDeps: _DebugLog
 Utils.lua
 Communication.lua
 UI.lua

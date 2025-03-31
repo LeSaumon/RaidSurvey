@@ -51,7 +51,7 @@ function Communication:SendSurvey(surveyData)
     -- Using timestamp as id, not clean but it works
     surveyData.id = time()
     surveyData.responses = {}
-
+ 
     local serializedData = self:SerializeSurvey(surveyData)
     local message = RaidSurvey.Utils.COMMANDS.SHOW .. ":" .. serializedData
     C_ChatInfo.SendAddonMessage(RaidSurvey.Utils.PREFIX, message, IsInRaid() and "RAID" or "PARTY")

@@ -1,18 +1,17 @@
 local addonName, RaidSurvey = ...
 RaidSurvey.version = "1.0"
+
 -- TODO : 
 --      - Réparer l'affichage des réponses dans le résultat du sondage
 --      - Tester la reception des message et l'affichage côté membres du raid
 
 function RaidSurvey:Initialize()
     self.Communication:Initialize()
-
     self.surveys = {}
     self.activeSurvey = nil
     self.responses = {}
     self:SetupSlashCommands()
-
-    print("|cFF00FF00RaidSurvey loaded|r")
+    if DLAPI then DLAPI.DebugLog(addonName, "RaidSurvey is succesfulyy loaded.") end
 end
 
 function RaidSurvey:SetupSlashCommands()
